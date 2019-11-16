@@ -1,6 +1,117 @@
+/* typewriter */
+
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid #f0f0f0; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation:
+    typing 5.5s steps(40, end),
+    blink-caret .8s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #f0f0f0 }
+}
+
+
+
+/* Navigation Progress Bar */
+
+#bar{
+    position:fixed;
+    background-color:#000;
+    width:100%;
+    height:0.8%;
+}
+
+/* Scroll Bar */
+ ::-webkit-scrollbar {
+        width: 6px;
+		background-color: #1b1b1b;
+    }
+
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,1); 
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1px;
+        -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,1); 
+    }
+
+/* Rotating logo */
+
+
+
+
+.logos {
+  border-radius: 50% !important;
+  -webkit-transition: -webkit-transform .8s ease-in-out !important;
+          transition:         transform .8s ease-in-out !important;
+}
+.logos:hover {
+  -webkit-transform: rotate(4deg) !important;
+          transform: rotate(4deg) !important;
+}
+
+/* Rotating Text */
+.ml7 {
+      position: relative;
+      font-weight: 900;
+      font-size: 3.7em;
+}
+
+.ml7 .text-wrapper {
+      position: relative;
+      display: inline-block;
+      padding-top: 0.2em;
+      padding-right: 0.05em;
+      padding-bottom: 0.1em;
+      overflow: hidden;
+}
+
+.ml7 .letter {
+      transform-origin: 0 100%;
+      display: inline-block;
+      line-height: 1em;
+}
+
+/* starting screen effect */
+
+.overlay {
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      background: #fff;
+      top: 0%:
+}
+
+.overlay h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      font-weight: bolder;
+      letter-spacing: 12px;
+}
+
+
 
 html, body {
-      cursor: url(cursor.png), auto !important;
+      cursor: url(cursor1.png), auto !important;
 }
 
 * {
@@ -35,8 +146,8 @@ video {
       left: 0;
       width: 100%;
       height: 100vh;
-      background: #1b1b1b;
-      opacity: 0.8;
+      background: #103055;
+      opacity: 0.7;
 }
 
 .header {
@@ -46,9 +157,15 @@ video {
       transform: translate(-50%, -50%);
 }
 
-.header h1 {
+
+.header h2 {
       color: #d3ae87;
-      font-size: 80px !important;
+      font-size: 60px !important;
+}
+
+.header h1 {
+      color: #fff;
+      font-size: 700% !important;
 }
 
 @media(max-width: 900px) {
@@ -57,7 +174,7 @@ video {
       }
 
       .header h1 {
-            font-size: 34px !important;
+            font-size: 300% !important;
             text-align: center;
       }
 }
@@ -103,16 +220,6 @@ video {
 }
 
 
-
-.cursor {
-      pointer-events: none;
-      position: fixed;
-      padding: 0.3rem;
-      background-color: #000;
-      border-radius: 50%;
-      mix-blend-mode: difference;
-      transition: transform 0.3s ease;
-}
 
 
 
@@ -279,6 +386,10 @@ video {
       nav #menu {
             display: none;
       }
+	  nav #bar{
+		  
+		  display: none;
+	  }
 }
 
 @media(min-width: 900px) {

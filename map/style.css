@@ -1,0 +1,1 @@
+#map{height:100%;width:100%}.call_karna{display:grid;grid-template-columns:repeat(6,0fr);grid-auto-rows:50vh;grid-gap:10px;width:80%;margin:auto;color:#fff;align-items:center}#contactUs{grid-column:3/span 6;background-image:radial-gradient(rgba(0,0,0,.05),rgba(255,255,255,.2));border:3px solid;border-color:#000;text-align:center;width:100%;height:100%;padding:15px}
