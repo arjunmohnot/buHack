@@ -441,7 +441,7 @@ video {
       nav #menu {
             display: none;
       }
-	  nav #bar{
+	  #bar{
 		  
 		  display: none;
 	  }
