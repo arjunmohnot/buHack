@@ -7,5 +7,5 @@ bar.css('background', '-webkit-linear-gradient(left, red '+ baseX +'%, green '+ 
 
 $window.scroll(function(e) {      
     var x = $window.scrollTop() / docHeight * 100 + baseX;
-    bar.css('background', '-webkit-linear-gradient(left, red '+ x +'%, green '+ x +'%)');
+    bar.css('background', '-webkit-linear-gradient(left, green '+ x +'%, green '+ x +'%)');
 });

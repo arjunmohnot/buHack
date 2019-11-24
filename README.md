@@ -1,2 +1,0 @@
-# BUhack
-BUhack Website

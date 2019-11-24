@@ -3,9 +3,19 @@ var bar = $('#bar'),
     docHeight = $(document).height(),
     baseX = $window.height() / docHeight * 90;
 
-bar.css('background', '-webkit-linear-gradient(left, #d3d3d3 '+ baseX +'%, #1b1b1b '+ baseX +'%)');
+bar.css('background', '-webkit-linear-gradient(left, #f3ab1b '+ baseX +'%, #1b1b1b '+ baseX +'%)');
 
 $window.scroll(function(e) {      
     var x = $window.scrollTop() / docHeight * 100 + baseX;
-    bar.css('background', '-webkit-linear-gradient(left, #d3d3d3 '+ x +'%, #1b1b1b '+ x +'%)');
+	console.log(x);
+	
+	if (x>75){
+	bar.css('background', '-webkit-linear-gradient(left, #178808 '+ x +'%, #1b1b1b '+ x +'%)');}
+	else if (x>50){
+	bar.css('background', '-webkit-linear-gradient(left, #5271fe '+ x +'%, #1b1b1b '+ x +'%)');}
+	else if (x>25){
+	bar.css('background', '-webkit-linear-gradient(left, #ef1b41 '+ x +'%, #1b1b1b '+ x +'%)');}
+	else{
+	bar.css('background', '-webkit-linear-gradient(left, #f3ab1b '+ x +'%, #1b1b1b '+ x +'%)');}
+		
 });
