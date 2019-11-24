@@ -441,10 +441,15 @@ video {
       nav #menu {
             display: none;
       }
-	  #bar{
-		  
-		  display: none;
-	  }
+	  .heads{
+	
+	position: relative;
+	width: 100%;
+	height: 101%;
+	background: url(bg-mobile.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
 }
 
 @media(min-width: 900px) {
