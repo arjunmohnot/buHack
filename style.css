@@ -115,7 +115,7 @@
 
 
 html, body {
-      cursor: url(cursor1.png), auto !important;
+      cursor: url(cursor.png), auto !important;
 }
 
 * {
@@ -133,10 +133,11 @@ html, body {
 	
 	position: relative;
 	width: 100%;
-	height: 101%;
+	height: 100%;
 	background: url(bg.jpg);
 	background-size: cover;
 	background-attachment: fixed;
+
 }
 
 .heads .wave
@@ -154,6 +155,10 @@ html, body {
 	
 	
 }
+
+
+
+
 
 @keyframes animate
 {
@@ -173,6 +178,7 @@ html, body {
 	
 }
 .video-container {
+	  background: #000;
       position: absolute;
       width: 100%;
       height: 100vh;
@@ -229,7 +235,7 @@ video {
       }
 
       .header h1 {
-            font-size: 300% !important;
+            font-size: 350% !important;
             text-align: center;
       }
 }
@@ -452,10 +458,56 @@ video {
 }
 }
 
+
+/* Devfolio Button */
+
+#devfolio-apply-now {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: #3770FF;
+  margin-top: 10% !important;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-weight: 1000;
+  padding: 12px 30%;
+  text-align: center;
+  text-transform: none;
+  text-align: center;
+  display: inline-block;
+  background-color:-webkit-linear-gradient(120deg, #48C5BF 24%, #228bc3bf 43%,#9F3869 77%);
+}
+
+#devfolio-apply-now:not([disabled]) {
+  cursor: pointer;
+}
+
+#devfolio-apply-now:hover {
+  background-color: #2954BF !important;
+}
+
+#devfolio-apply-now .logo {
+  /* Please keep the color of Devfolio logo mark either whit
+                e (#FFFFFF) or black (#000000) */
+  fill: #fecf4f;
+}
+
+
+
 @media(min-width: 900px) {
       #resize {
+		    
             visibility: hidden !important;
       }
+	 
+	
 }
 
 /*--------------- about section starts  --------------- */
@@ -681,6 +733,11 @@ textarea:focus {
             margin: 5% 0;
             width: 98%;
       }
+	  
+	   #devfolio-apply-now {
+		  padding: 12px 26%;
+		  
+	  }
 }
 
 /*--------------- footer section starts here --------------- */
@@ -731,3 +788,92 @@ textarea:focus {
             width: 92% !important;
       }
 }
+
+
+*:before, *:after {
+  content: "";
+  position: absolute;
+}
+
+
+button {
+  background: transparent;
+  color: #000;
+  align-items: center-left;
+  padding: 1rem 10rem;
+  font: 20px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  letter-spacing: 2px;
+}
+
+.button-hand button:before {
+
+  content: "👇";
+  font-size: 200%;
+  transform: scaleX(-1);
+  right: 0px;
+  top: -10px;
+  animation: up-down 2s infinite;
+}
+.button-hand button .hands:before, .button-hand button .hands:after {	
+  content: "👇";
+  font-size: 200%;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+.button-hand button .hands:before {
+  transform: rotate(-60deg);
+  left: -45px;
+  top: -10px;
+}
+.button-hand button .hands:after {
+  transform: rotate(170deg);
+  right: 30px;
+  top: 50px;
+}
+.button-hand button:hover .hands:before {
+  opacity: 1;
+  left: -35px;
+}
+.button-hand button:hover .hands:after {
+  opacity: 1;
+  top: 40px;
+}
+
+@keyframes up-down {
+  50% {
+    margin-top: -5%;
+  }
+}
+*:focus {
+    outline: 0 !important;
+}
+
+/*
+#color-change{
+	
+  -webkit-animation-name: blackWhite;
+  -webkit-animation-name: blackWhiteFade;
+  -webkit-animation-iteration-count: infinite;  
+  -webkit-animation-duration: 5s; 
+	
+	
+}
+
+
+@-webkit-keyframes blackWhite {  
+  0% { color: #00ff00; }
+  25% { color: #ff0000; }
+  75% { color: #00ff00; }
+  100% { color: #ff0000; }
+}
+
+@-webkit-keyframes blackWhiteFade {  
+  0% { color: #00ff00; }
+  25% { color: #ff0000;}
+  75% { color: #00ff00;}
+  100% { color: #ff0000; }
+}*?
