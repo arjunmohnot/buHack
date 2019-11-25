@@ -3,6 +3,8 @@ var bar = $('#bar'),
     docHeight = $(document).height(),
     baseX = $window.height() / docHeight * 90;
 
+
+
 bar.css('background', '-webkit-linear-gradient(left, #f3ab1b '+ baseX +'%, #1b1b1b '+ baseX +'%)');
 
 $window.scroll(function(e) {      
@@ -10,7 +12,9 @@ $window.scroll(function(e) {
 	console.log(x);
 	
 	if (x>75){
-	bar.css('background', '-webkit-linear-gradient(left, #178808 '+ x +'%, #1b1b1b '+ x +'%)');}
+	bar.css('background', '-webkit-linear-gradient(left, #178808 '+ x +'%, #1b1b1b '+ x +'%)');
+	$('::-webkit-scrollbar-thumb').css('background', 'rgba(0, 0, 0, 0.75)');
+	}
 	else if (x>50){
 	bar.css('background', '-webkit-linear-gradient(left, #5271fe '+ x +'%, #1b1b1b '+ x +'%)');}
 	else if (x>25){
