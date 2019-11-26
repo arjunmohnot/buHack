@@ -878,12 +878,11 @@ button {
 
 .button-hand button:before {
 
-  content: "😍";
+  content: "👋";
   font-size: 200%;
-  transform: scaleX(-1);
   right: 0px;
   top: -10px;
-  animation: up-down 2s infinite;
+  animation: up-down 2.2s infinite;
 }
 .button-hand button .hands:before, .button-hand button .hands:after {	
   content: "👇";
@@ -912,7 +911,13 @@ button {
 
 @keyframes up-down {
   50% {
-    margin-top: -5%;
+    margin-right: -5%;
+  }
+  75% {
+	  transform: rotate(6deg);
+  }
+  100% {
+	  transform: rotate(-6deg);
   }
 }
 *:focus {
