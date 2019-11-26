@@ -74,6 +74,39 @@
 
 
 <body>
+
+<!-- Facebook Messenger Support -->
+<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v5.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="105404294270195"
+  theme_color="#ffc300"
+  logged_in_greeting="Hi, Hello, Hola, Bonjour, Aloha, Ciao, Namaste! I'm BuHack how can I help you?"
+  logged_out_greeting="Hi, Hello, Hola, Bonjour, Aloha, Ciao, Namaste! I'm BuHack how can I help you?">
+      </div>
+
+
+
+<!-- Ends -->
+
 	  <div class="overlay">
   <!--           <h1><img src='http://artfcity.com/wp-content/uploads/2016/09/tumblr_o3sh82GRYz1ruj667o3_1280.gif' width="100%" /></h1> -->
   
