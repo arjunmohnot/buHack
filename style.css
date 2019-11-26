@@ -154,12 +154,13 @@ html, body {
 
 }
 
+
 .heads .wave
 {
 	
 	position: absolute;
 	width: 100%;
-	height: 72px;
+	height: 69px;
 	bottom: 0;
 	left: 0;
 	background: url(wave.png);
@@ -788,7 +789,7 @@ textarea:focus {
       background-image: -webkit-linear-gradient(45deg,
                                               rgba(0, 0, 0, .2) 25%,
                                               transparent 25%,
-                                              rgba(255, 255, 255, .2) 85%,
+                                              rgba(255, 255, 255, .2) 90%,
                                               transparent 75%,
                                               transparent);
       opacity: 0.5;
@@ -872,6 +873,7 @@ button {
       border: .3pt solid rgba(184, 140, 93, 0.7);
       text-transform: uppercase !important;
       font-size: 12px !important;
+	  font-family: "Tahoma", "Geneva", "sans-serif" !important;
       letter-spacing: 2px;
 	    white-space: nowrap;
 }
@@ -949,7 +951,7 @@ button {
   animation: bounce 4s infinite 2s;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
-  transform: scale(1)
+  transform: scale(1);
 }
 
 .scroll-down:before {
@@ -1015,6 +1017,8 @@ button {
 }
 
 .fa { font-family: 'FontAwesome' !important; }
+
+
 
 /*
 #color-change{
