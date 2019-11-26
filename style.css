@@ -799,6 +799,11 @@ section {
             border: 1px solid #E2E9ED;
           }
     }
+    @media(max-height: 800px){
+          .at-user__avatar{
+                display: none;
+          }
+    }
     .at-user {
       position: absolute;
       top: 50%;
