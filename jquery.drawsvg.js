@@ -9,7 +9,6 @@ bar.css('background', '-webkit-linear-gradient(left, #ef1b41 '+ baseX +'%, #1b1b
 
 $window.scroll(function(e) {      
     var x = $window.scrollTop() / docHeight * 100 + baseX;
-	console.log(x);
 	
 	if (x>75){
 	bar.css('background', '-webkit-linear-gradient(left, #178808 '+ x +'%, #1b1b1b '+ x +'%)');
