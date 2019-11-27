@@ -113,7 +113,7 @@
       width: 100%;
       height: 100vh;
       background: #fff;
-      top: 0%:
+      top: 0%;
 }
 
 .overlay h1 {
@@ -614,7 +614,7 @@ section {
 }
 
 .services {
-      background: #161616;
+      background: #f5efef;
 }
 
 .service {
@@ -623,14 +623,40 @@ section {
 
 .icon ion-icon {
       font-size: 36px;
-      color: #d3ae87;
+      color: #50eb8b;
 }
 
 .icon-title {
       font-size: 28px;
       margin-bottom: 4px;
-      color: rgb(182, 182, 182);
+      color: rgb(27, 14, 14);
       font-weight: lighter;
+}
+
+
+
+.sponsers {
+      background: rgb(20, 18, 18);
+}
+
+#sponsers h1{
+	padding-left: 10px;
+    
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#f7ecec;
+    font-size: 50px;
+}
+hr{
+      background: white;
+}
+#sponsers h3{
+	padding-left: 10px;
+    
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#faf4f4;
+    font-size: 20px;
 }
 
 /*--------------- our team section starts  --------------- */
@@ -1025,38 +1051,87 @@ textarea:focus {
 
 /*--------------- footer section starts here --------------- */
 
-.footer {
-      background: #161616;
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
 }
 
-#media, #address, #mail {
-      text-align: center !important;
+section .section-title {
+    text-align: center;
+    color: #f3fcfa;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #232525 !important;
 }
 
-.footer .container {
-      padding: 160px 0;
+#footer h3{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    font-size: 15px;
 }
 
-.footer li, p, h4 {
-      font-size: 24px !important;
+#footer ul.social li{
+      padding: 2px 0;
+      font-size: 20px;
+}
+#footer ul.social li a i {
+    margin-right: 30px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
 }
 
-.footer h4 {
-      font-weight: lighter;
-      color: #fff;
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
 }
 
-.footer p {
-      color: grey;
-      font-weight: lighter;
-}
-
-.footer li {
-      font-weight: lighter;
-      color: #fff;
-      padding-left: 20px;
-      font-size: 18px !important;
-}
 
 #media ul {
       list-style: none;
