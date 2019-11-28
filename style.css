@@ -136,7 +136,7 @@ html, body {
       box-sizing: border-box;
       margin: 0%;
       padding: 0%;
-      font-family: "Darker Grotesque" !important;
+      font-family: 'Roboto', sans-serif !important;
 }
 
 /*--------------- hero section --------------- */
@@ -378,7 +378,7 @@ video {
 }
 
 .nav #menu li a {
-      font-family: Roboto !important;
+      font-family: 'Roboto', sans-serif !important;
       color: rgb(256, 256, 256);
       transition: all 500ms ease-out;
 }
@@ -897,7 +897,8 @@ hr{
     
     body {
       /* background: #FFF; */
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto', sans-serif ;
+      
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
@@ -1067,6 +1068,15 @@ section .section-title {
     background: #232525 !important;
 }
 
+h3.q1{
+	padding-left: 10px;
+    
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+
+}
+
 #footer h3{
 	padding-left: 10px;
     border-left: 3px solid #eeeeee;
@@ -1075,6 +1085,15 @@ section .section-title {
     color:#ffffff;
 
 }
+#footer h4{
+	
+    font-size: large00;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+
+}
+
 #footer a {
     color: #ffffff;
     text-decoration: none !important;
@@ -1088,7 +1107,7 @@ section .section-title {
       font-size: 20px;
 }
 #footer ul.social li a i {
-    margin-right: 30px;
+    margin-right:40px;
 	font-size:25px;
 	-webkit-transition: .5s all ease;
 	-moz-transition: .5s all ease;
@@ -1096,7 +1115,9 @@ section .section-title {
 }
 #footer ul.social li:hover a i {
 	font-size:30px;
-	margin-top:-10px;
+      margin-top:-14px;
+      margin-right: 1.5rem;
+      padding: 14px;
 }
 #footer ul.social li a,
 #footer ul.quick-links li a{
