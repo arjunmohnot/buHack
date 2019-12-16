@@ -379,13 +379,14 @@ video {
 
 .nav #menu li a {
       font-family: 'Roboto', sans-serif !important;
+      font-size: medium;
       color: rgb(256, 256, 256);
       transition: all 500ms ease-out;
 }
 
 .nav #menu li a:hover {
       text-decoration: none;
-      color: #f3ab1b;
+      color: #2790f3;
       transition: all 500ms ease-out;
 }
 
