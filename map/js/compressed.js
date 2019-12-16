@@ -8,8 +8,6 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 var marker = L.marker(center).addTo(mymap);
 marker.bindPopup("<b>buHack</b> 2020 <br>Bennett University, Greater Noida").openPopup();
 
-
-
 var textWrapper = document.querySelector('.ml7 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
 
