@@ -638,6 +638,7 @@ section {
 
 .sponsers {
       background: rgb(20, 18, 18);
+      min-height: 80vh;
 }
 
 #sponsers h1{
@@ -675,6 +676,12 @@ hr{
 body {
   background: ghostwhite;
   font-family: "Roboto", sans-serif;
+}
+
+.team {
+  margin: 0;
+  padding: 0;
+  /* max-height: ; */
 }
 
 .AlphabetNav {
@@ -727,8 +734,7 @@ body {
   align-items: center;
   width: 90%;
 }
-
-.ContactList .Contact {
+.Contact {
   margin-bottom: 1.5rem;
 }
 
@@ -797,7 +803,7 @@ body {
   }
 		*/
   .ContactList {
-    padding-top: 6rem;
+    padding-top: 12rem;
   }
 
   .Contact {
