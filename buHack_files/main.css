@@ -19,7 +19,7 @@ li {
 
 #sponsors {
 	text-align: left;
-	background-image: url("../../images/paper.png");
+	//background-image: url("../../images/paper.png");
 	background-repeat: repeat;
 	color: #fff;
 }
