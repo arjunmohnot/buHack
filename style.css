@@ -569,10 +569,10 @@ video {
     -ms-flex-align: center;
     -webkit-box-align: center;
     align-items: center;
-    background-color: #3770FF;
+    background-color: #2d3436;
     margin-top: 8% !important;
     border-radius: 3px;
-    border: none;
+    border: box;
     color: #fff;
     cursor: pointer;
     display: -ms-flexbox;
@@ -600,7 +600,7 @@ video {
 #devfolio-apply-now .logo {
     /* Please keep the color of Devfolio logo mark either whit
                 e (#FFFFFF) or black (#000000) */
-    fill: #fecf4f;
+    fill: #fff;
 }
 
 
