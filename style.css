@@ -451,6 +451,7 @@ video {
     z-index: 2;
     width: 30px;
     height: 30px;
+	margin-top: 1% !important;
     float: right;
     transition: all 0.3s ease-out;
     visibility: hidden;
@@ -482,13 +483,15 @@ video {
 }
 
 #resize #menu {
-    height: 90px;
+    height: 105vh !important;
     position: absolute;
     left: 45%;
-    transform: translateX(-40%);
+	margin-top: -5%;
+    transform: translateX(-45%);
     text-align: center;
     display: table-cell;
     vertical-align: center;
+	
 }
 
 #resize #menu li {
@@ -519,12 +522,9 @@ video {
     opacity: 1;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1025px) {
 
-    .button-hand {
 
-        display: none
-    }
 
     #toggle {
         visibility: visible;
@@ -544,6 +544,7 @@ video {
         font-weight: lighter !important;
         color: rgb(156, 156, 156) !important;
         transition: all 500ms ease-out;
+		
     }
 
     nav #menu {
@@ -580,7 +581,7 @@ video {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
         'Segoe UI Emoji', 'Segoe UI Symbol';
     font-weight: 1000;
-    padding: 12px 12%;
+    padding: 12px 6%;
     text-transform: none;
     text-align: center;
     display: inline-block;
@@ -604,16 +605,13 @@ video {
 
 
 
-@media(min-width: 900px) {
+@media(min-width: 1025px) {
     #resize {
 
         visibility: hidden !important;
     }
 
-    .button-hand-mobile {
 
-        display: none
-    }
 
 
 }
@@ -1109,6 +1107,7 @@ details[open] summary:hover::after {
 .newsletter {
     padding-top: 30px;
     background: #161616;
+	background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
 }
 
 .newsletter input {
@@ -1210,6 +1209,8 @@ textarea:focus {
     border-bottom: 1px solid #c9c9c9;
 }
 
+
+
 @media(max-width: 900px) {
     #contact-form {
         margin: 5% 0;
@@ -1217,7 +1218,7 @@ textarea:focus {
     }
 
     #devfolio-apply-now {
-        padding: 12px 26%;
+        padding: 12px 6%;
 		margin-left: 0%;
 
     }
@@ -1237,11 +1238,27 @@ textarea:focus {
     button {
 
         width: 90%;
+		
 
     }
 
 
 
+}
+
+
+@media(max-width: 420px) {
+	
+
+	
+	
+	.typewriter{
+		
+		font-size: 80%;
+		
+	}
+	
+	
 }
 
 /*--------------- footer section starts here --------------- */
@@ -1334,7 +1351,7 @@ button:focus {
 }
 
 .f_widget.about-widget .f_list {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 .new_footer_top .f_social_icon a {
@@ -1375,6 +1392,10 @@ button:focus {
 
 .ti-pinterest:before {
     content: "\e731";
+}
+.foot-f{
+	
+	margin-left: 7%;
 }
 
 .btn_get_two {
@@ -1546,7 +1567,7 @@ button {
     content: url(hand.png);
     font-size: 200%;
     width: 1%;
-    right: 0px;
+    right: 10px;
     top: -10px;
     animation: up-down 2.2s infinite;
 }
@@ -2034,6 +2055,12 @@ section.schedule ul.day .day-title h3 {
         max-width: 90%;
         width: 90%;
     }
+	
+	#resize #menu{
+		
+			margin-top: -18%;
+		
+	}
 }
 
 section.schedule ul.day li.item {
@@ -2111,6 +2138,28 @@ section.schedule ul.day li.item .description {
         padding-right: 10px;
     }
 }
+
+@media only screen and (max-width: 365px) {
+  .button-hand button:before {
+
+    content: '';
+    font-size: 200%;
+    width: 1%;
+    right: 10px;
+    top: -10px;
+    animation: up-down 2.2s infinite;
+}
+
+
+#logo-mobile{
+	
+  display: block;margin-left: auto;margin-right: auto;width: 50%;
+}
+
+}
+
+
+
 
 @media only screen and (max-width: 640px) {
     section.schedule ul.day li.item {
@@ -2360,6 +2409,7 @@ body {
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
 }
+
 
 
 
