@@ -1,5 +1,3 @@
-
-
 h1,
 h2,
 h3,
@@ -15,7 +13,6 @@ li {
 	font-family: "ingra", Arial;
 	color: #fff;
 }
-
 
 #sponsors {
 	text-align: left;
@@ -296,7 +293,6 @@ li {
 		font-size: xx-small !important
 	}
 }
-
 
 footer * {
 	flex-basis: calc(100% / 3)
