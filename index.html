@@ -1147,7 +1147,7 @@ vid.onloadeddata = function() {
 
             </div>
 
-            <div class="header">
+            <div class="header" id="home">
 
                 <div class="container" style="margin-top: -12%">
 
@@ -1232,20 +1232,22 @@ vid.onloadeddata = function() {
 
 				</div>
             </span>
-
+				
                 <ul id="menu" class="ulc">
                     <!-- class="   animated slower infinite pulse delay-5s"-->
-                    <li><a href="#home">Home</a></li>
+                    <li class="active" id="0nav"><a href="#home">Home</a></li>
 
-                    <li><a href="#services">Code4Change</a></li>
-                    <li><a href="#sponsors">Sponsors</a></li>
-                    <li><a href="#prizes">Prizes</a></li>
-                    <li><a href="#schedule">Schedule</a></li>
-                    <li><a href="#faq">FAQ</a></li>
+                    <li id="1nav"><a href="#services">Code4Change</a></li>
+                    <li id="2nav"><a href="#sponsors">Sponsors</a></li>
+                    <li id="3nav"><a href="#prizes">Prizes</a></li>
+                    <li id="4nav"><a href="#schedule">Schedule</a></li>
+                    <li id="5nav"><a href="#faq">FAQ</a></li>
                     <!--<li><a href="#team">Team</a></li>-->
-                    <li><a href="#contact">Contact</a></li>
+                    <li id="6nav"><a href="#contact">Contact</a></li>
+					<li style="display: none" id="7nav"><a href="#footer">Footer</a></li>
 
                 </ul>
+				
 
                 <div id="toggle">
                     <div class="span">menu</div>
@@ -1277,7 +1279,7 @@ vid.onloadeddata = function() {
 
                 <a name="services"></a>
 
-                <section class="story ss-style-doublediagonal">
+                <section class="story ss-style-doublediagonal" id="services">
 
                     <div class="container rC">
 
@@ -1629,7 +1631,7 @@ vid.onloadeddata = function() {
                 <section class="ss-style-doublediagonal story" id="sponsors">
                     <a name="prizes"></a>
 
-                    <div class="container rC">
+                    <div class="container rC" id="prizes">
                         <div class="container" style="margin-bottom:3%">
                             <div class="row" style=" padding-top: 4%;">
                                 <div class="section-index ">04</div>
@@ -1861,7 +1863,7 @@ vid.onloadeddata = function() {
 
            </section>-->
 
-                <section class="services ss-style-doublediagonal">
+                <section class="services ss-style-doublediagonal" id="schedule">
                     <div class="container rC">
 
                         <div style="margin-top:10%;margin-bottom:-4%" class="row" style=" padding-top: 4%;">
@@ -1869,7 +1871,7 @@ vid.onloadeddata = function() {
                             <div class="col-md-8 section-heading " style="color: rgb(20, 20, 20); font-family: Roboto; font-size: 30px">Schedule</div>
                         </div>
                         <a class="anchor" id="schedule"></a>
-                        <section class="schedule" id="schedules">
+                        <section class="schedule">
                             <div class="container">
                                 <div class="animation-container vertical top left extra-height">
                                     <div class="animated"></div>
@@ -1965,7 +1967,7 @@ vid.onloadeddata = function() {
                 <!-- Ends here -->
 
                 <!--------------- faq section starts here -------------->
-                <section class="newsletter ss-style-doublediagonal story">
+                <section class="newsletter ss-style-doublediagonal story" id="faq">
 
                     <div class="container-fluid">
 
@@ -2187,7 +2189,7 @@ vid.onloadeddata = function() {
 
                 <!--------------- Contact section starts here --------------->
                 <a name="contact"></a>
-                <section class="services ss-style-doublediagonal">
+                <section class="services ss-style-doublediagonal" id="contact">
 
                     <div class="container rC" style="margin-top:5%;margin-bottom:5%;">
 
@@ -2395,7 +2397,7 @@ vid.onloadeddata = function() {
                 <!--------------- contact section starts here --------------->
 
                 <!--------------- footer starts here --------------->
-
+				<div id ="footer">
                 <footer class="ss-style-doublediagonal">
                     <div class="new_footer_top">
                         <div class="container">
@@ -2432,6 +2434,7 @@ vid.onloadeddata = function() {
                     </div>
                 </footer>
                 </div>
+				</div>
 
                 <!--------------- footer ends here --------------->
 

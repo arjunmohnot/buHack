@@ -376,6 +376,82 @@ video {
 	transition: all 500ms ease-out;
 }
 
+.nav #menu li.active a{
+	
+	color: #BA0027 !important;
+	font-size: 23px !important;
+	font-weight: 900;
+	   -webkit-transition-duration: 0.2s;
+        /* Safari */
+        transition-duration: 0.2s;
+}
+
+.nav #menu li.active1 a{
+	
+	color: #5271FF !important;
+	font-size: 23px !important;
+	font-weight: 900;
+	   -webkit-transition-duration: 0.2s;
+        /* Safari */
+        transition-duration: 0.2s;
+}
+
+
+.nav #menu li.active2 a{
+	
+	color: #128708 !important;
+	font-size: 23px !important;
+	font-weight: 900;
+	   -webkit-transition-duration: 0.2s;
+        /* Safari */
+        transition-duration: 0.2s;
+}
+
+
+.nav #menu li.active3 a{
+	
+	color: #F3AB1B !important;
+	font-size: 23px !important;
+	font-weight: 900;
+	   -webkit-transition-duration: 0.2s;
+        /* Safari */
+        transition-duration: 0.2s;
+}
+
+
+.nav #menu li.active4 a{
+	
+	color: #EF1B41 !important;
+	font-size: 23px !important;
+	font-weight: 900;
+	   -webkit-transition-duration: 0.2s;
+        /* Safari */
+        transition-duration: 0.2s;
+}
+
+
+.nav #menu li.active5 a{
+	
+	color: #37B6FF !important;
+	font-size: 23px !important;
+	font-weight: 900;
+	   -webkit-transition-duration: 0.2s;
+        /* Safari */
+        transition-duration: 0.2s;
+}
+
+
+.nav #menu li.active6 a{
+	
+	color: #57C181 !important;
+	font-size: 23px !important;
+	font-weight: 900;
+	   -webkit-transition-duration: 0.2s;
+        /* Safari */
+        transition-duration: 0.2s;
+}
+
+
 #toggle {
 	position: absolute;
 	right: 40px;
@@ -498,7 +574,7 @@ video {
 	align-items: center;
 	background-color: #000;
 	margin-top: 8% !important;
-	border-radius: 3px;
+	border-radius: 6px;
 	border: box;
 	border-width: 2px;
 	border-color: #fff;
@@ -903,7 +979,6 @@ details {
 	position: relative;
 	color: #fff;
 	font-size: 22px;
-	border: 1px solid rgba(0, 0, 0, .1);
 	border-radius: 15px;
 	box-sizing: border-box;
 	transition: all .3s;
