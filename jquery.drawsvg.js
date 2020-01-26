@@ -23,11 +23,11 @@ $window.scroll(function (e) {
   let navigationLinks = document.querySelectorAll('.ulc li a');
   let fromTop = window.pageYOffset;
   
-  //console.log(navigationLinks);
+  ////console.log(navigationLinks);
   
   for(let i of navigationLinks){
 	  
-	  //console.log(document.querySelector(i.hash));
+	  ////console.log(document.querySelector(i.hash));
 	  
 	  //home, services,sponsors,prizes,schedule,faq,contact
 	  
@@ -37,9 +37,9 @@ $window.scroll(function (e) {
 	  if(i.hash=="#services" && ((($(i.hash).offset().top)-20)>fromTop)){
 		
 		
-			  console.log( fromTop);
-			  	  console.log(1);
-	  console.log($(i.hash).offset().top);
+			  //console.log( fromTop);
+			  	  //console.log(1);
+	  //console.log($(i.hash).offset().top);
 		  document.getElementById("0nav").classList.add("active");
 		   document.getElementById("1nav").classList.remove("active1");
 		    document.getElementById("2nav").classList.remove("active2");
@@ -53,9 +53,9 @@ $window.scroll(function (e) {
 	  
 	  if(i.hash=="#footer" && ((($(i.hash).offset().top)-20)>fromTop)){
 		
-			  console.log( fromTop);
-			  	  console.log(7);
-	  console.log($(i.hash).offset().top);
+			  //console.log( fromTop);
+			  	  //console.log(7);
+	  //console.log($(i.hash).offset().top);
 		  document.getElementById("0nav").classList.remove("active");
 		   document.getElementById("1nav").classList.remove("active1");
 		    document.getElementById("2nav").classList.remove("active2");
@@ -67,9 +67,9 @@ $window.scroll(function (e) {
 	  }
 	  
 	  if(i.hash=="#contact" && ((($(i.hash).offset().top)-20)>fromTop)){
-			  console.log( fromTop);
-			  	  console.log(6);
-	  console.log($(i.hash).offset().top);
+			  //console.log( fromTop);
+			  	  //console.log(6);
+	  //console.log($(i.hash).offset().top);
 		  document.getElementById("0nav").classList.remove("active");
 		   document.getElementById("1nav").classList.remove("active1");
 		    document.getElementById("2nav").classList.remove("active2");
@@ -80,9 +80,9 @@ $window.scroll(function (e) {
 				break;
 	  }
 	 if(i.hash=="#faq" && ((($(i.hash).offset().top)-20)>fromTop)){
-			  console.log( fromTop);
-			  	  console.log(5);
-	  console.log($(i.hash).offset().top);
+			  //console.log( fromTop);
+			  	  //console.log(5);
+	  //console.log($(i.hash).offset().top);
 		  document.getElementById("0nav").classList.remove("active");
 		   document.getElementById("1nav").classList.remove("active1");
 		    document.getElementById("2nav").classList.remove("active2");
@@ -94,9 +94,9 @@ $window.scroll(function (e) {
 	  }
 	  
 	 if(i.hash=="#schedule" && ((($(i.hash).offset().top)-20)>fromTop)){
-			  console.log( fromTop);
-			  	  console.log(4);
-	  console.log($(i.hash).offset().top);
+			  //console.log( fromTop);
+			  	  //console.log(4);
+	  //console.log($(i.hash).offset().top);
 		  document.getElementById("0nav").classList.remove("active");
 		   document.getElementById("1nav").classList.remove("active1");
 		    document.getElementById("2nav").classList.remove("active2");
@@ -108,9 +108,9 @@ $window.scroll(function (e) {
 	  }
 	  
 	 if(i.hash=="#prizes" && ((($(i.hash).offset().top)-20)>fromTop)){
-			  console.log( fromTop);
-			  	  console.log(3);
-	  console.log($(i.hash).offset().top);
+			  //console.log( fromTop);
+			  	  //console.log(3);
+	  //console.log($(i.hash).offset().top);
 		  document.getElementById("0nav").classList.remove("active");
 		   document.getElementById("1nav").classList.remove("active1");
 		    document.getElementById("2nav").classList.add("active2");
@@ -123,9 +123,9 @@ $window.scroll(function (e) {
 	  
 	 if(i.hash=="#sponsors" && ((($(i.hash).offset().top)-20)>fromTop)){
 			
-				  console.log( fromTop);
-				  console.log(2);
-	  console.log($(i.hash).offset().top);
+				  //console.log( fromTop);
+				  //console.log(2);
+	  //console.log($(i.hash).offset().top);
 		  document.getElementById("0nav").classList.remove("active");
 		   document.getElementById("1nav").classList.add("active1");
 		    document.getElementById("2nav").classList.remove("active2");

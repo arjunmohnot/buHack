@@ -1298,7 +1298,7 @@ vid.onloadeddata = function() {
 
                                 $(window).resize(() => {
                                     var winSize = window.screen.width;
-                                    console.log(winSize);
+                                    //console.log(winSize);
 
                                     if (winSize <= 1024) {
                                         $('.small-text').addClass('text-center');
@@ -2474,7 +2474,7 @@ vid.onloadeddata = function() {
                                 location.hostname == this.hostname
                             ) {
                                 // Figure out element to scroll to
-                                console.log(this.hash);
+                                //console.log(this.hash);
 
                                 var target = $(this.hash);
                                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -2561,7 +2561,7 @@ vid.onloadeddata = function() {
                                     $contactName = $contact.find(".Contact-names"),
                                     $nameArr = $contactName.text().split(" ");
 
-                                console.log($nameArr[0].split("")[0].toLowerCase());
+                                //console.log($nameArr[0].split("")[0].toLowerCase());
 
                                 if (
                                     $nameArr[0].split("")[0].toLowerCase() !== $navItem.text().split("")[0].toLowerCase()
