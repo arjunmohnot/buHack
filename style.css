@@ -492,10 +492,12 @@ video {
 	-ms-flex-align: center;
 	-webkit-box-align: center;
 	align-items: center;
-	background-color: #2d3436;
+	background-color: #000;
 	margin-top: 8% !important;
 	border-radius: 3px;
 	border: box;
+	border-width: 2px;
+	border-color: #fff;
 	color: #fff;
 	cursor: pointer;
 	display: -ms-flexbox;
@@ -509,6 +511,9 @@ video {
 	display: inline-block;
 	margin-left: 1%;
 	background-color: -webkit-linear-gradient(120deg, #48C5BF 24%, #228bc3bf 43%, #9F3869 77%);
+	   -webkit-transition-duration: 0.2s;
+        /* Safari */
+        transition-duration: 0.2s;
 }
 
 #devfolio-apply-now:not([disabled]) {
@@ -517,6 +522,10 @@ video {
 
 #devfolio-apply-now:hover {
 	background-color: #2954BF !important;
+	   -webkit-transition-duration: 0.2s;
+        /* Safari */
+        transition-duration: 0.2s;
+	border-color: #2954BF;
 }
 
 #devfolio-apply-now .logo {
