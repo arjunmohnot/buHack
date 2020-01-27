@@ -2311,6 +2311,19 @@ body {
             transform: translateY(-5px);
         }
     }
+	
+
+@media(min-width: 700px) {
+	#logo-desktop {
+		display: block;
+	}
+	
+	#logo-mobile {
+		display: none;
+	}
+	
+	
+}
 
 /*
 #color-change{
