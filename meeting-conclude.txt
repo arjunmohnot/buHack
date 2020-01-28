@@ -10,9 +10,9 @@
 
 - .tech domain {Done}
 
-- Building ==> sponsors
+- Building ==> sponsors (To be done!)
 
-- timer change (To be done!)
+- timer change ({Done}
 
 - building, mascot contac remove {Done}
 

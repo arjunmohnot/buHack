@@ -320,7 +320,12 @@
 				<div id="bar"></div> <span id="brand">
                 <div class="logos">
                     <a href="index.html"><img class="img-logos" id="logo-desktop" src="images/bu.png" alt="logo" width="20%" style="z-index:10000;margin-left:4%;margin-top:-2.45%;" /><!--style="display:block;max-width:175px;margin-top:-2%;min-width:60px;position:absolute;top:-2;z-index:10000" /></a>-->
+						<div class="flexBox" style="
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;">
 						<a href="index.html"><img class="img-logos" id="logo-mobile" src="logo.png" alt="logo-mobile" width='12%' style="margin-top:10px;margin-left: auto;margin-right: auto;width: 15%; margin-left:33.5%;"/></a>
+				</div>
 				</div>
             </span>
 				<ul id="menu" class="ulc">
@@ -372,10 +377,36 @@
 				<section class="story ss-style-doublediagonal" id="services">
 					<div class="container rC">
 						<div class="text-center" style="color: #fff;">
-							<p style="font-size:40px ">Coming Soon &#x1F389;</p>
+							<div class="flexBox" style="
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+	margin-top:1%;"><p style="font-size:40px ">Coming Soon &#x1F389;</p></div>
 							<p>‎‎&#8195;</p>
-							<p id="demo" style="font-size:24px"></p>
-							<p>‎‎&#8195;</p>
+<div class="flexBox" style="
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+	margin-top:2%;margin-bottom:5%;margin-left:-3%;">
+<div id="clockdiv">
+  <div id="clockdiv1">
+    <span class="days"></span>
+    <div class="smalltext">Days</div>
+  </div>
+  <div id="clockdiv2">
+    <span class="hours"></span>
+    <div class="smalltext">Hours</div>
+  </div id="clockdiv1">
+  <div id="clockdiv3">
+    <span class="minutes"></span>
+    <div class="smalltext">Minutes</div>
+  </div>
+  <div id="clockdiv4">
+    <span class="seconds"></span>
+    <div class="smalltext">Seconds</div>
+  </div>
+</div>
+</div>						<p>‎‎&#8195;</p>
 						</div>
 						<script>
 							$(document).ready(() => {
@@ -1075,8 +1106,8 @@
 				<script type="text/javascript">
 					TweenMax.to(".overlay h1", 1, {
 					                        opacity: 1.5,
-					                        y: -70,
-											top: "-5%",
+					                        y: 0,
+											top: "0%",
 					                        ease: Expo.easeInOut
 					                    })
 					                    TweenMax.to(".overlay", 1, {
@@ -1144,28 +1175,47 @@
 					                    });
 				</script>
 				<script>
-					// Set the date we're counting down to
-					                    var countDownDate = new Date("Mar 21, 2020 10:30:00").getTime();
-					                    // Update the count down every 1 second
-					                    var countdownfunction = setInterval(function() {
-					                        // Get todays date and time
-					                        var now = new Date().getTime();
-					                        // Find the distance between now an the count down date
-					                        var distance = countDownDate - now;
-					                        // Time calculations for days, hours, minutes and seconds
-					                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-					                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-					                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-					                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-					                        // Output the result in an element with id="demo"
-					                        document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
-					                            minutes + "m " + seconds + "s ";
-					                        // If the count down is over, write some text 
-					                        if (distance < 0) {
-					                            clearInterval(countdownfunction);
-					                            document.getElementById("demo").innerHTML = "EXPIRED";
-					                        }
-					                    }, 1000);
+					function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+var deadline = 'March 21 2020 08:00:00 GMT+0530';
+initializeClock('clockdiv', deadline);
 				</script>
 			
 	</body>

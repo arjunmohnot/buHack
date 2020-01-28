@@ -248,7 +248,7 @@ video {
 	}
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1025px) {
 	.img-logos {
 		display: block;
 		margin-left: auto;
@@ -1229,7 +1229,7 @@ textarea:focus {
 	border-bottom: 1px solid #c9c9c9;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1025px) {
 	#contact-form {
 		margin: 5% 0;
 		width: 98%;
@@ -1508,7 +1508,7 @@ button:focus {
 	display: inline-block;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1025px) {
 	.footer .container {
 		width: 92% !important;
 	}
@@ -2377,7 +2377,51 @@ body {
 
 
 
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
 
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #f0f0f0;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #0f0f0f;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+
+#clockdiv1 {
+	color: #F4AB1C;
+	font-weight:bold;
+}
+#clockdiv2 {
+	color: #BB0027;
+	font-weight:bold;
+}
+#clockdiv3 {
+	color: #38B6FF;
+	font-weight:bold;
+}
+#clockdiv4 {
+	color: #57C182;
+	font-weight:bold;
+}
 
 
 
