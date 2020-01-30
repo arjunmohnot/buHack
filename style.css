@@ -1983,7 +1983,7 @@ section.schedule .description {
 
 section.schedule ul.day {
 	padding-left: 50px;
-	margin-bottom: 25%;
+	margin-bottom: 27%;
 }
 
 section.schedule ul.day .day-title {
@@ -2424,6 +2424,54 @@ body {
 }
 
 
+@media(max-width: 380px) {
+	
+	
+	
+	#clockdiv{
+   
+    font-weight: 73;
+    font-size: 24px;
+}
+
+#clockdiv > div{
+    padding: 8px;
+    border-radius: 2px;
+   
+}
+
+#clockdiv div > span{
+    padding: 12px;
+    border-radius: 2px;
+   
+}
+
+.smalltext{
+    padding-top: 3px;
+    font-size: 13px;
+}
+
+	
+	
+}
+
+@media(max-width: 320px) {
+
+section.schedule ul.day li.item {
+	margin-bottom: 0;
+	list-style: none;
+	width: 120%;
+	min-width: 200px;
+	margin-left: -25%;
+}
+
+#iphone5s{
+	
+	margin-top: 10%;
+}
+
+
+}
 
 
 /*
