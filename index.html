@@ -654,7 +654,11 @@ The most valuable part of any hackathon is the learning experience. There will a
 if(field2==""){alert('Please Fill Your Email');document.getElementById("contact-email").focus();return false;}
 if(field3==""||field3.length>200){if(field3.length>200){alert('It should be less than 200 words');}else{alert('Your message should not be blank.');}
 document.getElementById("contact-project").focus();return false;}
-$.ajax({url:"https://docs.google.com/forms/d/e/1FAIpQLSeHyQVYIbnPprCVPVlfVKlRr5S_-SutE6wmqS3MpNntoQkNKA/viewform",data:{"entry.2005620554":field1,"entry.1045781291":field2,"entry.839337160":field3},type:"POST",dataType:"xml",success:function(d){},error:function(x,y,z){alert('Your message has been sent successfully.😉');document.getElementById("contact-form").reset();}});return false;}</script>
+
+console.log(field1,field2,field3);
+
+$.ajax({url:"https://docs.google.com/forms/d/e/1FAIpQLSeHyQVYIbnPprCVPVlfVKlRr5S_-SutE6wmqS3MpNntoQkNKA/formResponse?",
+data:{"entry.2005620554":field1,"entry.1045781291":field2,"entry.839337160":field3},type:"POST",dataType:"xml",success:function(d){},error:function(x,y,z){alert('Your message has been sent successfully.😉');document.getElementById("contact-form").reset();}});return false;}</script>
 </div>
 </div>
 </div>
